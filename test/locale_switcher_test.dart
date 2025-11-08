@@ -18,12 +18,13 @@ void main() {
     await manager.load();
 
     await tester.pumpWidget(DngToJpgApp(localeManager: manager));
+    await tester.pump();
 
-    expect(find.text('파일 선택 기능 준비 중'), findsOneWidget);
+    expect(find.text('DNG 파일 변환을 시작해볼까요?'), findsOneWidget);
 
     await manager.updateLocale(const Locale('en'));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
-    expect(find.text('File selection coming soon'), findsOneWidget);
+    expect(find.text('Ready to convert your DNG files?'), findsOneWidget);
   });
 }

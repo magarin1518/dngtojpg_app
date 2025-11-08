@@ -1,5 +1,28 @@
 {
   "@@locale": "ko",
   "appTitle": "DNG to JPG 변환기",
-  "homePlaceholder": "파일 선택 기능 준비 중"
+  "homeHeadline": "DNG 파일 변환을 시작해볼까요?",
+  "@homeHeadline": {
+    "description": "홈 화면 상단에 표시되는 주요 헤드라인"
+  },
+  "homeDescription": "RAW 이미지를 선택하고 변환 전에 설정을 확인하세요.",
+  "@homeDescription": {
+    "description": "홈 화면에서 다음 단계를 안내하는 설명 문구"
+  },
+  "homePickFiles": "DNG 파일 선택",
+  "@homePickFiles": {
+    "description": "파일 선택기 호출 버튼 라벨"
+  },
+  "homeConvertCta": "JPG로 변환",
+  "@homeConvertCta": {
+    "description": "변환을 시작하는 버튼 라벨"
+  },
+  "homeProgressTitle": "변환 대기열",
+  "@homeProgressTitle": {
+    "description": "변환 진행 카드의 제목"
+  },
+  "homeProgressSubtitle": "파일을 선택하면 변환이 시작됩니다",
+  "@homeProgressSubtitle": {
+    "description": "변환이 아직 시작되지 않은 상태를 설명하는 문구"
+  }
 }

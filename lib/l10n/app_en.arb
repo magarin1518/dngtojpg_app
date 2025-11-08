@@ -1,5 +1,28 @@
 {
   "@@locale": "en",
   "appTitle": "DNG to JPG Converter",
-  "homePlaceholder": "File selection coming soon"
+  "homeHeadline": "Ready to convert your DNG files?",
+  "@homeHeadline": {
+    "description": "Primary headline shown at the top of the home screen."
+  },
+  "homeDescription": "Choose your RAW images to review settings before conversion.",
+  "@homeDescription": {
+    "description": "Short paragraph explaining the next steps on the home screen."
+  },
+  "homePickFiles": "Pick DNG files",
+  "@homePickFiles": {
+    "description": "Call-to-action button label for opening the file picker."
+  },
+  "homeConvertCta": "Convert to JPG",
+  "@homeConvertCta": {
+    "description": "Button label for starting the conversion process."
+  },
+  "homeProgressTitle": "Conversion queue",
+  "@homeProgressTitle": {
+    "description": "Title shown above the placeholder conversion progress indicator."
+  },
+  "homeProgressSubtitle": "Waiting for files to start conversion",
+  "@homeProgressSubtitle": {
+    "description": "Helper text explaining that the conversion will begin after files are selected."
+  }
 }

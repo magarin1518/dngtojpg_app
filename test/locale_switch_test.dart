@@ -8,21 +8,23 @@ import 'helpers/in_memory_locale_storage.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('HomeScreen shows localized copy for default locale',
-      (tester) async {
+  testWidgets('switching locale updates the home screen copy', (tester) async {
     final manager = LocaleManager(
       fallbackLocale: const Locale('en'),
-      storage: InMemoryLocaleStorage(),
+      storage: InMemoryLocaleStorage(initialValue: 'ko'),
     );
 
     await manager.load();
     await tester.pumpWidget(DngToJpgApp(localeManager: manager));
     await tester.pump();
 
+    expect(find.text('DNG 파일 변환을 시작해볼까요?'), findsOneWidget);
+    expect(find.text('DNG 파일 선택'), findsOneWidget);
+
+    await manager.updateLocale(const Locale('en'));
+    await tester.pump();
+
     expect(find.text('Ready to convert your DNG files?'), findsOneWidget);
-    expect(
-      find.text('Choose your RAW images to review settings before conversion.'),
-      findsOneWidget,
-    );
+    expect(find.text('Pick DNG files'), findsOneWidget);
   });
 }

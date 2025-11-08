@@ -20,6 +20,6 @@ void main() {
 
     expect(find.byType(MaterialApp), findsOneWidget);
     expect(find.text('DNG to JPG Converter'), findsOneWidget);
-    expect(find.text('File selection coming soon'), findsOneWidget);
+    expect(find.text('Ready to convert your DNG files?'), findsOneWidget);
   });
 }
