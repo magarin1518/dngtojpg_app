@@ -2,7 +2,7 @@
 
 ## 개요
 **제품명**: DNG to JPG Converter  
-**플랫폼**: Flutter (Android & iOS)  
+**플랫폼**: android only  
 **목적**: DNG 이미지 파일을 4K 화질의 JPG 파일로 빠르고 쉽게 변환하는 크로스플랫폼 모바일 앱
 
 ## 목표
